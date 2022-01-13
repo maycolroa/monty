@@ -7,5 +7,4 @@
  * @line_number: line number.
  * Return:
  */
-void push(stack_t **stack, unsigned int line_number)
-  
+void push(stack_t **stack, unsigned int line_counter)
