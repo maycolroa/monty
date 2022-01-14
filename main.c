@@ -85,7 +85,7 @@ void parse_execute(FILE *monty_file, instruction_t instructions[])
 					if (i == 0)
 					{
 						token = strtok(NULL, LIMITERS);
-						token_error(stack, ln_cont, monty_file, token);
+						tk_error(stack, ln_cont, monty_file, token);
 						is_number(stack, ln_cont, token, monty_file);
 						n = atoi(token);
 					}
@@ -100,7 +100,7 @@ void parse_execute(FILE *monty_file, instruction_t instructions[])
 					enter = 1;
 				}
 			}
-			comment(stack, ln_cont, token, monty_file, enter);
+			comt(stack, ln_cont, token, monty_file, enter);
 		}
 		ln_cont++;
 	}
